@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #e6eaff;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title img {
+  width: 200px; /* antes era 70px */
+  margin-right: 10px;
+}
+
+.logo-title span {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+
+.azul { color: #2d4c7c; }
+.verde { color: #3cae6b; }
+
+.navbar nav a {
+  margin-left: 32px;
+  font-size: 1.2em;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.navbar nav a:hover {
+  color: #3cae6b;
+}
+
+.main-content {
+  background: #dbe2ff;
+  padding: 40px 0 60px 0;
+  text-align: center;
+  min-height: calc(100vh - 80px); /* considera altura do cabeçalho */
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.main-content h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#endereco {
+  width: 50vw;
+  max-width: 700px;
+  padding: 18px;
+  border-radius: 30px;
+  border: 3px solid #222;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  background: #f6f8fa;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content button {
+  padding: 12px 40px;
+  border-radius: 30px;
+  background: #1d5ec8;
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#map {
+  width: 70vw;
+  height: 400px;
+  margin: 0 auto 30px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+#resultado {
+  font-size: 1.1em;
+  margin-top: 10px;
+  white-space: pre-line;
+}
+
+.logo-solo {
+  width: 100px;
+  margin-right: 10px;
+}
+
+/* Estilos para a página de login e cadastro */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-container img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #1d5ec8;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background: #155a9a;
+}

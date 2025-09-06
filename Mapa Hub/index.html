@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header class="navbar">
+    <img src="logo.png" alt="Mapa Hub" class="logo-solo">
+    <nav>
+      <a href="index.html">Mapa</a>
+      <a href="#">Favoritos</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Sign Up</a>
+    </nav>
+  </header>
+  <main class="main-content">
+    <h2>Qual Local Deseja Procurar?</h2>
+    <input id="endereco" type="text" placeholder="Digite o local desejado">
+    <button onclick="buscar()">Buscar</button>
+    <div id="map"></div>
+    <pre id="resultado"></pre>
+  </main>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  background: linear-gradient(to bottom, #6ec6f7 0%, #e2cfa3 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.bg-map {
+  background: url('mapa.png') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.7);
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90vw;
+  z-index: 1;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.form-container img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+
+.azul { color: #2d4c7c; }
+.verde { color: #3cae6b; }
+
+.form-container form {
+  margin-top: 20px;
+}
+
+.form-container label {
+  text-align: left;
+  display: block;
+  margin-left: 5%;
+  font-size: 1.1em;
+  margin-bottom: 2px;
+}
+
+.form-container input {
+  width: 90%;
+  margin: 12px auto;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.2em;
+  display: block;
+  background: #fff;
+}
+
+.form-container button {
+  margin-top: 20px;
+  padding: 12px 40px;
+  border-radius: 30px;
+  background: #3cae6b;
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}

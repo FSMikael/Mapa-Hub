@@ -1,0 +1,122 @@
+body {
+  background: linear-gradient(to bottom, #6ec6f7 0%, #e2cfa3 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.bg-map {
+  background: url('mapa.png') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: relative;
+  z-index: 2;
+}
+
+.logo-solo {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.navbar nav a {
+  margin-left: 32px;
+  font-size: 1.2em;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.navbar nav a:hover {
+  color: #3cae6b;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.8);
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 350px;
+  max-width: 95vw;
+  z-index: 1;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+.form-container img {
+  width: 120px;
+  margin-bottom: 18px;
+}
+
+.form-container form {
+  margin-top: 10px;
+}
+
+.form-container label {
+  text-align: left;
+  display: block;
+  margin-left: 8%;
+  font-size: 1.08em;
+  margin-bottom: 2px;
+  margin-top: 12px;
+}
+
+.form-container input {
+  width: 84%;
+  margin: 10px auto;
+  padding: 13px;
+  border-radius: 30px;
+  border: 1.5px solid #bcd;
+  font-size: 1.1em;
+  display: block;
+  background: #f6f8fa;
+  transition: border 0.2s;
+}
+
+.form-container input:focus {
+  border: 2px solid #3cae6b;
+  outline: none;
+}
+
+.form-container button {
+  margin-top: 18px;
+  padding: 12px 40px;
+  border-radius: 30px;
+  background: #3cae6b;
+  color: #fff;
+  border: none;
+  font-size: 1.15em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-container button:hover {
+  background: #2d4c7c;
+}
+
+.form-container p {
+  margin-top: 18px;
+  font-size: 1em;
+}
+
+.form-container a {
+  color: #1d5ec8;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.2s;
+}
+.form-container a:hover {
+  color: #3cae6b;
+}
